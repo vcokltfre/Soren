@@ -2,6 +2,7 @@ from discord.ext import commands
 from discord import Embed
 from datetime import datetime
 from time import time
+from fractions import gcd
 
 
 class Core(commands.Cog):
@@ -38,6 +39,17 @@ class Core(commands.Cog):
         embed.set_footer(text="Creator: vcokltfre#6868", icon_url="https://cdn.discordapp.com/avatars/297045071457681409/a_d8ef3293d06f044af5a70ea7848d5fed.gif")
 
         await message.edit(embed=embed, content="")
+
+    @commands.command(name="bpr")
+    async def bpr(self, ctx: commands.Context):
+        bots = len([m for m in ctx.guild.members if m.bot])
+        users = ctx.guild.member_count - bots
+
+        cd = gcd(bots, users)
+
+        bots_r, users_r = bots // cd, users // cd
+
+        await ctx.send(f"Bot to person ratio: {bots_r}:{users_r}\nBots: {bots}\nPeople: {users}")
 
 
 def setup(bot: commands.Bot):
