@@ -17,8 +17,8 @@ class Random(commands.Cog):
             icon = ":loud_sound:"
         else:
             icon = ":hash:"
-            if channel.description:
-                description = channel.description
+            if channel.topic:
+                description = channel.topic
 
         await ctx.send(Embed(
             title=f"{icon} {channel.name}",
