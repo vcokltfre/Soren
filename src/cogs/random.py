@@ -11,6 +11,7 @@ class Random(commands.Cog):
 
     @commands.command(name="ce")
     async def channelembed(self, ctx: commands.Context, channel: Optional[Union[TextChannel, VoiceChannel]]):
+        channel = channel or ctx.channel
         description = None
         if isinstance(channel, VoiceChannel):
             icon = ":loud_sound:"
