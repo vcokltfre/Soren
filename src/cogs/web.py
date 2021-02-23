@@ -46,7 +46,7 @@ class Web(commands.Cog):
 
     @commands.command(name="getog")
     @commands.cooldown(rate=1, per=5, type=commands.BucketType.member)
-    async def tip(self, ctx: commands.Context, url: str):
+    async def getog(self, ctx: commands.Context, url: str):
         if await self.bot.is_owner(ctx.author):
             ctx.command.reset_cooldown(ctx)
 
