@@ -23,7 +23,7 @@ class Embeds(commands.Cog):
 
     @commands.command(name="embed")
     @commands.cooldown(rate=1, per=5, type=commands.BucketType.channel)
-    async def status(self, ctx: commands.Context, *, text: str):
+    async def embed(self, ctx: commands.Context, *, text: str):
         if await self.bot.is_owner(ctx.author):
             ctx.command.reset_cooldown(ctx)
 
@@ -31,7 +31,7 @@ class Embeds(commands.Cog):
 
     @commands.command(name="extract")
     @commands.cooldown(rate=1, per=5, type=commands.BucketType.channel)
-    async def status(self, ctx: commands.Context, *, link: str):
+    async def extract(self, ctx: commands.Context, *, link: str):
         if await self.bot.is_owner(ctx.author):
             ctx.command.reset_cooldown(ctx)
 
