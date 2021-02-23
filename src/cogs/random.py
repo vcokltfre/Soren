@@ -20,7 +20,7 @@ class Random(commands.Cog):
             if channel.topic:
                 description = channel.topic
 
-        await ctx.send(Embed(
+        await ctx.send(embed=Embed(
             title=f"{icon} {channel.name}",
             description=description,
         ))
