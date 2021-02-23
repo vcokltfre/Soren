@@ -13,7 +13,7 @@ bot.httpclient = ManagedHTTP()
 bot.load_initial_cogs(
     "src.cogs.core",
     "src.cogs.embeds",
-    "src.cogs.tips",
+    "src.cogs.web",
 )
 
 bot.run(config.get("token"))

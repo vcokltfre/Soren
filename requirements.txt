@@ -1,1 +1,4 @@
 git+https://github.com/vcokltfre/template-bot-v2
+pyyaml
+bs4
+lxml
