@@ -15,6 +15,7 @@ bot.load_initial_cogs(
     "src.cogs.core",
     "src.cogs.embeds",
     "src.cogs.web",
+    "src.cogs.random",
 )
 
 bot.run(config.get("token"))
