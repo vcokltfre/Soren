@@ -10,6 +10,7 @@ bot.started_at = datetime.utcnow()
 bot.config = config
 bot.load_initial_cogs(
     "src.cogs.core",
+    "src.cogs.embeds",
 )
 
 bot.run(config.get("token"))
