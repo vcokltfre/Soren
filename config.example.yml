@@ -1,0 +1,9 @@
+token: ""
+prefix:
+  - "soren "
+  - "so "
+  - "~"
+
+emoji:
+  online: "<:online:813759133819076678>"
+  offline: "<:offline:813759104698286100>"
