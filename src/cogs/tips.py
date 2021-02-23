@@ -1,5 +1,6 @@
 from discord.ext import commands
 from discord import Embed
+from datetime import datetime
 from re import compile
 
 og = compile(r"og:[a-z]+")
@@ -48,6 +49,8 @@ class Tips(commands.Cog):
 
         embed = Embed(title=title, description=description, colour=0x87ceeb, url=url)
         if image: embed.set_image(url=image)
+        embed.set_footer(text=f"Requested by {ctx.author}")
+        embed.timestamp = datetime.utcnow()
 
         await ctx.send(embed=embed)
 
