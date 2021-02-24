@@ -1,0 +1,32 @@
+resources:
+  docs:
+    embed:
+      description: "[discord.py Documentation](https://discordpy.readthedocs.io/)"
+      colour: 0x87ceeb
+
+  intents:
+    embed:
+      title: "Discord Gateway Intents"
+      description: "$$/intents.md"
+      colour: 0x87ceeb
+
+  pymongo:
+    embed:
+      description: "[Switching from PyMongo to motor](https://gist.github.com/anand2312/840aeb3e98c3d7dbb3db8b757c1a7ace)"
+      colour: 0x87ceeb
+
+  help:
+    text:
+      content: "https://gist.github.com/InterStella0/b78488fb28cadf279dfd3164b9f0cf96"
+
+  clientbot:
+    text:
+      content: "https://vcokltfre.dev/tips/clientbot/"
+
+aliases:
+  dpy: docs
+  discordpy: docs
+  discord.py: docs
+  d.py: docs
+  client: clientbot
+  mongo: pymongo
